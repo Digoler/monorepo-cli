@@ -1,0 +1,4 @@
+{
+    "extends":[ "<%= eslintType === 'index' ? "eslint-config-dragon" :
+    `eslint-config-dragon/${eslintType}` %>", <%_ if (enablePrettier) { _%> "prettier" <%_ } _%> ]
+}
